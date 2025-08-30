@@ -3,48 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emma Trinna Profile</title>
-  <link rel="stylesheet" href="pageone.css" />
+  <title>Paypal/me.EmmaTrinna</title>
+  <link rel="stylesheet" href="pagetwo.css" />
   <link rel="icon" href="https://www.paypalobjects.com/webstatic/icon/pp32.png" type="image/png">
+
 </head>
 <body>
   <div class="header">
-    <!-- <div class="back-button">&#8592;</div> -->
+   <a href="pageone.html" > <div class="back-arrow">&#8592;</div></a>
+    <div class="amount-label">AMOUNT</div>
   </div>
 
-  <div class="profile-section">
-    <div class="profile-pic">ET</div>
-  </div>
-
-  <div class="info-card">
-    <h2 class="username">Emma Trinna</h2>
-    <p class="handle">@Emmatrinna</p>
-    <a href="http://mediumaquamarine-elk-121087.hostingersite.com"><button class="favorite-btn">⭐ Add to Favorites</button></a>
-  </div>
-
-  <div class="connection-info">
-    <div class="avatars">
-      <div class="circle dark-blue"></div>
-      <div class="circle light-blue">ET</div>
-    </div>
-    <p>You and Emma Trinna</p>
-  </div>
-
-  <div class="transactions">
-    <div class="icon-text">
-      <div class="icon">📝</div>
-      <div>
-        <p><strong>Your recent transactions will show up here.</strong></p>
-        <p>New transactions will pop up here</p>
-      </div>
+  <div class="profile">
+    <div class="avatar"></div>
+    <div class="user-info">
+      <div class="username">EmmaTrinna</div>
+      <div class="handle">@emmatrinna</div>
     </div>
   </div>
 
-  <div class="actions">
-    <a href="http://mediumaquamarine-elk-121087.hostingersite.com"><button class="report-btn">⚠️ Report</button></a>
-    <a href="http://mediumaquamarine-elk-121087.hostingersite.com"><button class="block-btn">🚫 Block</button> </a>
-  </div>
+  <input class="amount-input" type="text" placeholder="$" />
 
-  <a href="pagetwo.html"><button class="send-btn">Continue</button> </a>
+  <!-- <div class="currency-select">USD &#9662;</div> -->
+
+
+  <select class="currency-select" onchange="handleSelection()">
+        <option value="USD">USD $</option>
+        <option value="EUR">EUR €</option>
+        <option value="GBP">GBP £</option>
+        <option value="JPY">JPY ¥</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="CNY">CNY</option>
+    </select>
+
+
+  <textarea class="note" placeholder="Add a note..."></textarea>
+
+  <a href="http://mediumaquamarine-elk-121087.hostingersite.com" class="next-btn">Next</a>
+
 </body>
 </html>
